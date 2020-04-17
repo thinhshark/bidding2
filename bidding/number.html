@@ -50,7 +50,7 @@
 
 		div#button{
 			position: absolute;
-			bottom: 50px;
+			bottom: 80px;
 			width: 100%;
 		}
 
@@ -65,27 +65,33 @@
 		}
 
 		button.confirm{
-			width: 60%;
-			height: 55px;
-			font-weight: bold;
-			background: #fb5603e0;
-			font-size: 15px;
+			background: #4caf50ed;
 		}
 
 		button.cancel{
-			background: #3e3e3e82;
-			color: #585858;
+			background: #f443368a;
 		}
 
-
+		input{
+			  width: 40%;
+			  padding: 15px;
+			  border: 1px solid #ccc;
+			  border-radius: 13px;
+			  font-size: 12px;
+			  opacity: 90% important!;
+			  }
 	    	
-    	@media screen and (max-width: 375px) {
+    	@media screen and (max-width: 320px) {
     			div#button{
 					bottom: -30px;
 				}
 				p#price {
 		    		bottom: -60px;
 		    	}
+		    	input{
+			  		width: 30%;
+			  	}
+	    	}
 	    	}
     	}
 	    </style>
@@ -93,9 +99,9 @@
 
     <body>
     	<div id="text">
-	        <!-- <p class="title">iPhone 11</p> -->
-	        <!-- <p class="package">64GB</p> -->
-	        <!-- <p class="slogan">Press confirm to enjoy the service</p> -->
+	        <!-- <p class="title">iPhone 11</p>
+	        <p class="package">daily</p>
+	        <p class="slogan">Press confirm to enjoy the service</p> -->
         </div>
         <p id="price">
         	DAILY
@@ -104,9 +110,13 @@
     	</p>
 
         <div id="button">
-        	<button class="confirm">BID NOW</button>
-        	<br>
-        	<button class="cancel">Cancel</button>
+        	<form action="">
+	        	<input type="text" placeholder="Input phone number">
+	        	<input type="text" placeholder="Input OTP">
+	        	<br>
+	        	<button class="confirm">Confirm</button>
+	        	<button class="cancel">Get OTP</button>
+        	</form>
         </div>
     </body>
 </html>
